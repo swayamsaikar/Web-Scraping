@@ -37,10 +37,10 @@ Constellation = []
 Right_ascension = []
 Discovery_year = []
 
+
 # now we will filter the list by removing the \n and splitting it by " " and making each value a separate element in the list
 filtered_planet_list = []
 for eachrow in without_empty_strings_list:
-
     for i in eachrow:
         if "\n" in i:
             p = i.replace("\n", "")
@@ -55,6 +55,7 @@ so i ll loop through filtered_planet_list and all of the respective values to th
 ex -> ["piscum","pisces","0 deg","2006"] <- a row. so here the first element of this list is the star and the second element is constellation
 👆 like this i ll append it
 '''
+
 for row in filtered_planet_list:
     star.append(row[0])
     Constellation.append(row[1])
